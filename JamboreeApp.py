@@ -6,7 +6,7 @@ import numpy as np
 
 Jamboree_df = pd.read_csv("./Jamboree_Admission.csv")
 
-st.title(
+st.markdown(
     """
     <h1 style='text-align: center; color: black;'>
         Jamboree Student Admission Prediction
@@ -59,5 +59,6 @@ if st.button("Predict"):
     Admission_Chance = model_predict(GRE_Score, TOEFL_Score, encoded_University_rating, SOP_rating, LOR_rating, CGPA_Score, encoded_Research)
 
     st.write(f"Predicted Admission Chance for the candidate: {Admission_Chance}")
+
 
 
