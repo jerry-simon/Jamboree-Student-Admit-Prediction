@@ -8,7 +8,7 @@ Jamboree_df = pd.read_csv("./Jamboree_Admission.csv")
 
 st.markdown(
     """
-    <h1 style='text-align: center; color: black;'>
+    <h1 style='text-align: center; color: white;'>
         Jamboree Student Admission Prediction
     </h1>
     """,
@@ -59,6 +59,7 @@ if st.button("Predict"):
     Admission_Chance = model_predict(GRE_Score, TOEFL_Score, encoded_University_rating, SOP_rating, LOR_rating, CGPA_Score, encoded_Research)
 
     st.write(f"Predicted Admission Chance for the candidate: {Admission_Chance}")
+
 
 
 
