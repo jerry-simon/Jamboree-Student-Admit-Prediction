@@ -1,5 +1,6 @@
-streamlit
-pickle
 pandas
-sklearn
 numpy
+scikit-learn
+tensorboard
+matplotlib
+streamlit
